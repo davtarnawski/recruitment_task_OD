@@ -19,7 +19,7 @@ html {
 }
 
 .header {
-  /* flex-basis: 5%; */
+  
   height: 30px;
 
   background-color: rgb(128, 128, 0);
@@ -93,7 +93,7 @@ html {
 .main__lines-circle {
   flex-basis: 100%;
   display: flex;
-  height: 100px;
+  height: 13vh;
   flex-flow: column wrap;
   justify-content: space-around;
   align-content: start;
@@ -106,6 +106,7 @@ html {
   @media (min-width: 900px) {
     flex-basis: 45%;
     align-content:center;
+    height: 15vh;
   }
 }
 
@@ -115,11 +116,11 @@ html {
   background-color: rgb(0, 0, 255);
 
   @media (min-width: 583px) {
-    width: 19vh;
+    width: 16vh;
     height: 2vh;
   }  
   @media (min-width: 900px) {
-    width: 18vh;
+    width: 16vh;
     height: 2vh;
   } 
 }
@@ -144,7 +145,7 @@ html {
   display: flex;
   flex-basis: 80%;
   margin: 0 20px;
-  /* align-content: start; */
+
 
   @media (min-width: 583px) {
     flex-basis: 30%;
@@ -158,6 +159,8 @@ html {
 }
 
 .rectangle {
+  display: flex;
+  justify-content: center;
   width: 120px;
   height: 35vh;
   background-color: blue;
@@ -172,4 +175,10 @@ html {
     width: 18vw;
     height: 80vh;
   }
+}
+
+.rectangle__txt {
+  margin: 20px;
+  font-size: 5vw;
+  text-transform: uppercase;
 }
