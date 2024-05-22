@@ -1,12 +1,12 @@
 * {
   margin: 0;
-  padding 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
 html {
   font-size: 20px;
-  background-color:darkgreen;
+  background-color: darkgreen;
 }
 
 .container {
@@ -17,54 +17,74 @@ html {
 .header {
   /* flex-basis: 5%; */
   height: 30px;
+
   background-color: greenyellow;
 }
 
-.main{
+.main {
   display: flex;
-  flex-wrap:wrap;
+  flex-wrap: wrap;
   margin: 20px;
 }
 
-.common-atr{
+.common-atr {
   border: 3px solid black;
 }
 
-.main__squares{
+.main__squares-lines-circle {
+  flex-basis: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: start;
+
+  @media (min-width: 583px) {
+    flex-basis: 45%;
+  }
+}
+
+.main__squares {
   flex-basis: 100%;
   display: flex;
   margin: 15px;
+  align-content: start;
+
+  @media (min-width: 900px) {
+    flex-basis: 45%;
+  }
 }
 
-.square{
+.square {
   width: 90px;
   height: 90px;
   transform: rotate(45deg);
-  background-color: red;;
+  background-color: red;
 }
 
 .square1 {
   margin: 80px 0 0 0;
 }
 
-.main__figures {
+.main__lines-circle {
   flex-basis: 100%;
   display: flex;
   height: 100px;
-  flex-flow:column wrap;
+  flex-flow: column wrap;
   justify-content: space-around;
   align-content: start;
   margin: 40px 0;
+
+  @media (min-width: 900px) {
+    flex-basis: 45%;
+  }
 }
 
 .line {
   width: 90px;
   height: 15px;
   background-color: darkblue;
-  
 }
 
-.circle{
+.circle {
   width: 90px;
   height: 90px;
   border-radius: 50%;
@@ -73,11 +93,26 @@ html {
 }
 
 .main__rectangle {
+  display: flex;
+  flex-basis: 100%;
   margin: 0 20px;
+  align-content: start;
+
+  @media (min-width: 583px) {
+    flex-basis: 45%;
+    align-content: end;
+  }
 }
+
 .rectangle {
-  width:120px;
+  width: 120px;
   height: 250px;
   background-color: lightblue;
-  
+
+  @media (min-width: 583px) {
+    background-color: brown;
+  }
+  @media (min-width: 900px) {
+    background-color: white;
+  }
 }
